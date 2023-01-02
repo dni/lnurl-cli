@@ -8,5 +8,5 @@ pipx install lnurl_cli
 lnurl decode LNURL123123123123
 ```
 ```console
-lnurl encode {"valid": "json", "or", "string"}
+lnurl encode https://valid.url/callback/12
 ```
