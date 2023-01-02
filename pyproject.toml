@@ -1,0 +1,32 @@
+[tool.poetry]
+name = "lnurl_cli"
+version = "1.0.0"
+description = "python lnurl cli"
+license = "MIT"
+authors = ["dni <office@dnilabs.com>"]
+readme = "README.md"
+repository = "https://github.com/dni/lnurl-cli"
+
+[tool.poetry.dependencies]
+python = "^3.10 | ^3.9 | ^3.8 | ^3.7"
+click = ">=8"
+lnurl = "^0.3.6"
+
+[tool.poetry.group.dev.dependencies]
+isort = "^5.10.1"
+black = "^22.6.0"
+mypy = "^0.971"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+lnurl = "lnurl_cli.cli:main"
+
+[tool.isort]
+profile = "black"
+
+[tool.mypy]
+ignore_missing_imports = "True"
+files = "lnurl_cli"
