@@ -1,6 +1,6 @@
 import sys
-import click
 
+import click
 import lnurl
 
 # disable tracebacks on exceptions
